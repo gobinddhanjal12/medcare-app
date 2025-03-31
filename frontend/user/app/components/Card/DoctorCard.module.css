@@ -9,6 +9,12 @@
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.card:hover{
+  transform: scale(1.02);
+  box-shadow: 2px 2px 4px #00000010;
 }
 
 .emptyStar {
