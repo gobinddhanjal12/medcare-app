@@ -119,7 +119,7 @@ const CreateDoctor = () => {
           onChange={handleChange}
           required
         />
-     
+
         <input
           type="number"
           className={styles.inputText}
@@ -128,6 +128,20 @@ const CreateDoctor = () => {
           value={formData.consultation_fee}
           onChange={handleChange}
           required
+        />
+        <textarea
+          className={styles.inputText}
+          name="education"
+          placeholder="Education"
+          value={formData.education}
+          onChange={handleChange}
+        />
+        <textarea
+          className={styles.inputText}
+          name="bio"
+          placeholder="Bio"
+          value={formData.bio}
+          onChange={handleChange}
         />
         <input
           type="text"
