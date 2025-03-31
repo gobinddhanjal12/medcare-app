@@ -39,7 +39,7 @@
   scroll-behavior: smooth;
   padding: 10px;
   white-space: nowrap;
-  /* max-width: calc(7 * 75px); */
+  max-width: none;
 }
 
 .dateSelector::-webkit-scrollbar {
@@ -89,6 +89,7 @@
 
 @media (min-width: 768px) {
   .dateSelector {
-    max-width: calc(7 * 75px);
+    /* max-width: calc(7 * 75px); */
+    max-width: 40vw;
   }
 }
