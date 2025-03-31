@@ -4,9 +4,15 @@
   background: #ffffff;
   color: #000000;
   border-radius: 10px;
-  box-shadow: 2px 2px 8px #00000018;
+  box-shadow: 2px 2px 4px #00000018;
   gap: 20px;
   padding: 10px;
+  transition: all 0.25s ease;
+}
+
+.card:hover{
+  box-shadow: 2px 2px 8px #00000018;
+  transform: scale(1.02);
 }
 
 .title {

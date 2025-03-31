@@ -68,9 +68,6 @@ const Header = () => {
 
               {user ? (
                 <>
-                  <li className={pathname === "/profile" ? styles.active : ""}>
-                    <Link href="/profile">Profile</Link>
-                  </li>
                   <li>
                     <button
                       className={`${styles.registerBtn} btn`}
@@ -124,9 +121,6 @@ const Header = () => {
               </div>
               {isDropdownOpen && (
                 <ul className={styles.dropdownMenu}>
-                  <li className={pathname === "/profile" ? styles.active : ""}>
-                    <Link href="/profile">Profile</Link>
-                  </li>
                   <li onClick={handleLogout} className={styles.logoutItem}>
                     Logout
                   </li>

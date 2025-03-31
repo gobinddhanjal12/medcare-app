@@ -9,12 +9,6 @@ const HomePage = () => {
     <div className={styles.home}>
       <div className={styles.left}>
         <h1 className={styles.title}>Medcare Admin.</h1>
-        <button
-          onClick={() => router.push("/login")}
-          className={`${styles.button} btn`}
-        >
-          Login
-        </button>
       </div>
       <div className={styles.right}>
         <Image
