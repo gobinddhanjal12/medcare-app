@@ -5,6 +5,7 @@ import styles from "./dashboard.module.css";
 import { AppointmentCard } from "../components/AppointmentCard/AppointmentCard";
 import Pagination from "../components/Pagination/Pagination";
 import CreateDoctor from "../components/CreateDoctor/CreateDoctor";
+import { Clock, Plus } from "lucide-react";
 
 const AdminDashboard = () => {
   const [appointments, setAppointments] = useState([]);
@@ -61,7 +62,7 @@ const AdminDashboard = () => {
             }`}
             onClick={() => setActiveTab("createDoctor")}
           >
-            Create Doctor
+            <Plus size={18} /> Create Doctor
           </button>
           <button
             className={`${styles.btn} ${
@@ -69,6 +70,7 @@ const AdminDashboard = () => {
             }`}
             onClick={() => setActiveTab("pending")}
           >
+            <Clock size={18} />
             Pending Appointments
           </button>
         </div>
