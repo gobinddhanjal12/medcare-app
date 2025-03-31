@@ -110,6 +110,8 @@ const DoctorDetails = () => {
             Book Appointment
           </button>
 
+          <hr className={styles.hr}/>
+
           <DoctorReviews />
         </div>
       </div>
