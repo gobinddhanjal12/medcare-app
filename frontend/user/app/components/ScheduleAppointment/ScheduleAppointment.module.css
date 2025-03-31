@@ -1,0 +1,137 @@
+.container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  margin: 20px 32px;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 20px !important;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.bookButton {
+  background-color: #1f5221;
+  color: white;
+  padding: 10px 24px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.tabContainer {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.activeTab {
+  background-color: #1f5221;
+  color: white;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.nextButton {
+  width: 100%;
+  background-color: #1f5221;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.dropdownWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  appearance: none;
+  cursor: pointer;
+}
+
+.dropdownWrapper .icon {
+  position: absolute;
+  top: 60%;
+  right: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #555;
+}
+
+.dateHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 20px;
+}
+
+.dateButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-top: 2px;
+  padding: 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dateButton:hover {
+  transform: scale(1.1);
+}
+
+.dateHeader .heading {
+  text-align: center;
+}
+
+.dateHeader .icon {
+  color: #333;
+}
+
+.scrollButton {
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  padding: 20px 16px;
+}

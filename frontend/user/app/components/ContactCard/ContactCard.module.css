@@ -1,0 +1,53 @@
+.contactCard {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5f0e9;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.contactCard {
+  background-color: white;
+  border: 1px solid #c6e0d3;
+}
+
+.contactCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(28, 74, 42, 0.1);
+}
+
+.contactInfo {
+  flex: 1;
+}
+
+.description {
+  color: #4a6b57;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.phoneNumber {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.phoneNumber:hover {
+  text-decoration: underline;
+}
+
+.phoneNumber svg {
+  margin-right: 8px;
+}
+
+.contactInfo h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0 0 8px 0;
+}

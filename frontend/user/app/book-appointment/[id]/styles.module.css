@@ -1,0 +1,43 @@
+.appointments {
+  display: flex;
+  flex-direction: column;
+}
+
+.left,
+.right {
+  flex: 50%;
+  min-height: 80vh;
+}
+
+.left {
+  background: var(--primary-color);
+  align-content: center;
+  color: #ffffffdf;
+  line-height: 1.4;
+  padding: 20px;
+}
+
+.right {
+  background: url("/images/medcare1.png") no-repeat center center;
+  background-size: cover;
+  background-position: top right;
+}
+
+.left .btn {
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .appointments {
+    flex-direction: row;
+  }
+
+  .left {
+    padding: 80px;
+  }
+
+  .left,
+  .right {
+    min-height: 100vh;
+  }
+}

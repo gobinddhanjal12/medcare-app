@@ -1,0 +1,92 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #00000018;
+  gap: 20px;
+  padding: 10px;
+}
+
+.title {
+  font-size: medium;
+}
+
+.para {
+  font-size: small;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-left: auto;
+}
+
+.approve,
+.reject,
+.loading {
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: small;
+  padding: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.approve {
+  background: #1c4a2a;
+}
+
+.approve:hover {
+  background: #178538;
+}
+
+.reject{
+  background: #f50000;
+}
+
+.reject:hover {
+  background: #ff1e1e;
+}
+
+.error {
+  color: #ff0000;
+}
+
+.doctorDetails{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.doctorDetails h3{
+  font-weight: 600;
+}
+
+.doctorImage{
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.detail{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: capitalize;
+}
+
+.loading{
+  background: #656565;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+
+.icon {
+  width: 18px;
+  height: 18px;
+}

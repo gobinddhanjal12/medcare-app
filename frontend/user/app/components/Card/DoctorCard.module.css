@@ -1,0 +1,88 @@
+.card {
+  line-height: 1.5;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  background: #f8fcf9;
+  border: 1px solid #0000001f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.emptyStar {
+  color: #f39c12;
+  width: 16px;
+  height: 16px;
+}
+
+.profileImage {
+  margin-top: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  margin: 12px 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  font-size: 12px;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+}
+
+.ratings {
+  margin: 50px auto;
+  font-size: 14px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.star {
+  fill: #f39c12;
+  color: #f39c12;
+  width: 16px;
+  height: 16px;
+}
+
+.bookButton {
+  width: 100%;
+  padding: 20px 10px;
+  margin-top: auto;
+  background: transparent;
+  border: 1px solid #00000021;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-bottom: 20px;
+}
+
+.bookButton:hover {
+  background-color: #2e7d32;
+  color: white;
+}

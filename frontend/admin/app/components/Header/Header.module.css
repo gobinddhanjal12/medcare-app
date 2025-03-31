@@ -1,0 +1,227 @@
+.header {
+  background: #f6f6f6;
+  padding: 40px 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.subContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #1c4a2a;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+.hamburgerIcon {
+  stroke: #1c4a2a;
+}
+
+.menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.553);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menuOpen {
+  transform: translateX(0);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navMenu ul,
+.desktopNavLinks ul {
+  list-style: none;
+  text-align: center;
+}
+
+.loginBtn {
+  border: 1px solid #ffffff !important;
+  background: none;
+  color: #ffffff;
+}
+
+.registerBtn {
+  border: none;
+  background: #1c4a2a;
+  color: #ffffff;
+}
+
+.desktopNavLinks ul {
+  display: flex;
+  gap: 20px;
+}
+
+.navMenu li {
+  margin: 40px 0;
+}
+
+.navMenu a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  transition: color 0.3s ease;
+}
+
+.desktopNavLinks {
+  display: none;
+}
+
+.desktopButtons {
+  display: none;
+}
+
+.userMenu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.active {
+  color: #1c4a2a !important;
+  font-weight: 600;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  min-width: 150px;
+  z-index: 100;
+}
+
+.dropdownMenu li {
+  padding: 20px 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.dropdownMenu li:hover {
+  background: #f0f0f0;
+}
+
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+
+  .header {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .desktopButtons {
+    display: flex;
+  }
+
+  .desktopNavLinks {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+
+  .desktopNavLinks ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .desktopNavLinks li {
+    color: #7b7b7b;
+  }
+
+  .desktopButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .loginBtn {
+    border: 1px solid #aeaeae !important;
+    background: none;
+    color: #0f0f0f;
+  }
+
+  .registerBtn {
+    border: none;
+    background: #1c4a2a;
+    color: #ffffff;
+  }
+
+  .menuOverlay {
+    display: none;
+  }
+
+  .navMenu {
+    display: flex;
+  }
+
+  .navMenu ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  .navMenu li {
+    margin: 0;
+  }
+
+  .navMenu a {
+    font-size: 1.2rem;
+    color: #333;
+  }
+}

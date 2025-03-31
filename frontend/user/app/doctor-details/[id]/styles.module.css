@@ -1,0 +1,141 @@
+.container {
+  padding: 10px;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  margin: auto;
+  align-items: center;
+}
+
+.left {
+  flex: 25%;
+}
+
+.right {
+  flex: 75%;
+  color: #272727;
+}
+
+.profileImage {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.name {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.specialty {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.bookButton {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.bookButton:hover {
+  background: #227a3d;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
+.details {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.buttonContainer,
+.desktopBookButton {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .profileImage {
+    width: 250px;
+    height: 250px;
+  }
+
+  .buttonContainer,
+  .desktopBookButton {
+    display: block;
+  }
+
+  .subContainer {
+    max-width: 80%;
+  }
+
+  .container {
+    padding: 40px;
+  }
+
+  .name {
+    font-size: 60px;
+    font-weight: 500;
+  }
+
+  .subContainer {
+    flex-direction: row;
+    align-items: normal;
+  }
+
+  .desktopBookButton {
+    padding: 10px 15px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.25s ease;
+  }
+
+  .desktopBookButton:hover {
+    background: #277d41;
+  }
+
+  .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 20px 0px;
+  }
+
+  .bookButton {
+    display: none;
+  }
+}

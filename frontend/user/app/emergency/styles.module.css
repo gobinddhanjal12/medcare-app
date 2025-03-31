@@ -1,0 +1,80 @@
+.container {
+  padding: 10px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #c6e0d3;
+  margin-top: 20px;
+  color: #2b2b2b;
+}
+
+.header h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 16px;
+}
+
+.emergencySection {
+  margin-bottom: 32px;
+  border-radius: 16px;
+  background-color: #e9f5ee;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(28, 74, 42, 0.1);
+  border: 1px solid #c6e0d3;
+}
+
+.section {
+  margin-bottom: 32px;
+  border-radius: 16px;
+  background-color: white;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #c6e0d3;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.sectionIcon {
+  margin-right: 12px;
+  color: var(--primary-color);
+}
+
+.sectionHeader h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.emergencySection .contactCard {
+  background-color: white;
+  border: 1px solid #c6e0d3;
+}
+
+.contactsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .contactsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}

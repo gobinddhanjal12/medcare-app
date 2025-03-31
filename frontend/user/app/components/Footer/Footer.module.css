@@ -1,0 +1,21 @@
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #f6f6f6;
+    z-index: 10;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}

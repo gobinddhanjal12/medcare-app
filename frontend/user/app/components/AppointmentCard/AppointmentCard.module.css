@@ -1,0 +1,103 @@
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.094);
+  padding: 16px;
+  transition: transform 0.2s;
+  line-height: 2;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.card h3 {
+  font-weight: 600;
+}
+
+.status {
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 6px 12px;
+  font-size: small;
+  border-radius: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.status.pending {
+  color: #ffffff;
+  background-color: #ffbf00;
+}
+
+.status.approved {
+  color: #ffffff;
+  background-color: #00bb2c;
+}
+
+.status.rejected {
+  color: #ffffff;
+  background-color: #ff0000;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 8px 12px;
+  margin: 0 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pageNumber {
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.doctorDetail {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.doctorImage {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .status {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    margin-bottom: auto;
+  }
+}

@@ -1,0 +1,45 @@
+.filterHeader {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.resetButton {
+    background: none;
+    border: none;
+    color: #2e7d32;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.filterSection {
+    background: #FBFBFB;
+    border: 1px solid #E0E8E0;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.filterTitle {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-size: small;
+}
+
+.filterLabel {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: small;
+}
+
+.filterInput {
+    margin-right: 8px;
+}

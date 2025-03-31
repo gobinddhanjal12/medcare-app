@@ -1,0 +1,113 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("/images/login-img.png") center/cover no-repeat;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    text-align: left;
+    line-height: 2.0;
+    margin: 20px;
+    width: 600px;
+    max-width: 100%;
+    border: 1px solid #fff;
+    color: #313131;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 36px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: #084700;
+    text-decoration: none;
+}
+
+
+.card label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card input {
+    width: 100%;
+    padding: 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.card button {
+    width: 100%;
+    padding: 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.inputContainer {
+    position: relative;
+    width: 100%;
+}
+
+.inputContainer input {
+    padding-left: 45px;
+}
+
+.icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+.loginbtn:hover {
+    background: #0c6301;
+}
+
+.loginbtn {
+    background: #084700;
+}
+
+.resetbtn:hover {
+    background: #ab957d;
+}
+
+.resetbtn {
+    background: #c6b09a;
+}
+
+.forgetPassword {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.error {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.loginbtn:disabled,
+.resetbtn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

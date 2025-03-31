@@ -1,0 +1,52 @@
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  flex: 50%;
+  overflow: hidden;
+  min-height: 80vh;
+  background: #1c4a2a;
+  align-content: center;
+  color: #ffffffdf;
+  line-height: 1.4;
+  padding: 20px;
+}
+
+.title {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.button {
+  margin-top: 50px;
+  background: #ffffff;
+  color: #000000;
+}
+
+.right {
+  flex: 50%;
+  position: relative;
+  overflow: hidden;
+  min-height: 80vh;
+}
+
+@media (min-width: 768px) {
+  .home {
+    flex-direction: row;
+  }
+
+  .left {
+    padding: 60px;
+  }
+
+  .left,
+  .right {
+    min-height: 100vh;
+  }
+}

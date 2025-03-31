@@ -1,0 +1,50 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardContainer {
+  display: grid;
+  gap: 20px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  background: #f7f7f7;
+  border: none;
+  cursor: pointer;
+}
+
+.active {
+  background: #1c4a2a;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    justify-content: center;
+  }
+
+  .dashboard {
+    flex-direction: row;
+  }
+
+  .left {
+    flex: 25%;
+  }
+
+  .right {
+    flex: 75%;
+  }
+}

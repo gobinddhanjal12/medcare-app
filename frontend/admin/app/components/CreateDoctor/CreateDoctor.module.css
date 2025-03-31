@@ -1,0 +1,64 @@
+.createDoctorContainer {
+  padding: 20px;
+}
+
+.createDoctorContainer h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.submitBtn {
+  background-color: #1c4a2a;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitBtn:hover {
+  background-color: #218838;
+}
+
+.selectText {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.2s, background 0.2s;
+  background-color: white;
+  cursor: pointer;
+}
+
+.selectText:focus {
+  outline: none;
+  background-color: #f8f9fa;
+}
+
+.fileUpload {
+  padding: 12px 20px;
+}

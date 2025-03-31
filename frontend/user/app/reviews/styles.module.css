@@ -1,0 +1,83 @@
+.container {
+  padding: 20px;
+  max-width: none;
+  margin: auto;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.hr {
+  background: var(--primary-color);
+  padding: 4px;
+  margin-top: 8px;
+  margin-bottom: 40px;
+  max-width: 60%;
+}
+
+.loading,
+.error,
+.noReviews {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
+
+.reviewList {
+  list-style: none;
+  padding: 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.pageButton {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pageButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.sortContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-left: auto;
+  margin-bottom: 20px;
+  justify-content: right;
+}
+
+.sortSelect {
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.sortSelect option {
+  background-color: white;
+  color: #333;
+  font-size: 12px;
+  padding: 12px;
+  font-weight: 500;
+  border-radius: 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 80%;
+  }
+}

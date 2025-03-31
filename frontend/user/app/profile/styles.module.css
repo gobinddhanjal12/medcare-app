@@ -1,0 +1,118 @@
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.title {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f8f9fa;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  background: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.details {
+  text-align: left;
+}
+
+.details p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.error {
+  color: red;
+  font-size: 18px;
+}
+
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  flex: 1;
+}
+.right {
+  flex: 2;
+}
+
+.left {
+  justify-items: center;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.inputGroup label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.inputGroup input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 580px;
+  font-size: 16px;
+  background-color: #f5f5f5;
+}
+
+.hr {
+  padding: 4px;
+  max-width: 500px;
+  background: var(--primary-color);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.name{
+  text-transform: capitalize;
+}
+
+.logoutBtn{
+  background: var(--primary-color);
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .profileContainer {
+    flex-direction: row;
+  }
+
+  .avatar {
+    width: 220px;
+    height: 220px;
+    font-size: 100px;
+  }
+
+  .left,
+  .right {
+    padding: 20px;
+  }
+}
